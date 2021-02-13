@@ -1,13 +1,15 @@
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../theme';
 
 const Button = styled.button`
   background: transparent;
+  margin-left: ${props => props.margin8 && '8px'};
   border: 1px solid ${theme.palette.secondary.main};
   border-radius: 4px;
   color: ${theme.palette.primary.main};
   padding: ${theme.spacing(2)};
   ${theme.typography.button};
+  cursor: pointer;
 
   &:hover {
     border: 1px solid ${theme.palette.secondary.light};
